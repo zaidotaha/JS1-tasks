@@ -1,0 +1,186 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body {
+            margin:0;
+            width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            
+            /* Task 1 CSS */
+            .container{
+                width:80%;
+                min-height: 10vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                padding-bottom: 100px;
+            }
+            .equation{
+                width:50%;
+                min-height: 8vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .part-of-equation{
+                display: flex; flex-direction: column; 
+                justify-content: center; align-items: center;
+                width:30%;
+            }
+            .number{
+                background-color:rgb(237, 237, 237);
+                border:1px solid black;
+                min-height:5vh;
+                width:60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+            }
+            .operation{
+                background-color: rgb(237, 237, 237);
+                border:1px solid black;
+                min-height:5vh;
+                width:30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+            }
+            .number, .operation{
+                margin:15px;
+            }
+            button{
+                font-size: 1.1rem;
+                border-radius: 20px;
+                background-color:white;
+                padding:5px 8px;
+            }
+            .calc{
+                margin-top:5vh;
+            } 
+            h1{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            /* Task 2 CSS */
+            .marks-container{
+                display: flex; flex-direction: column; 
+                justify-content: center; align-items: center;
+                width:30%;
+            }
+            .marks-value{
+                background-color:rgb(237, 237, 237);
+                border:1px solid black;
+                min-height:5vh;
+                width:20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                margin:15px;
+            }
+            .marks-button{
+                font-size: 1.1rem;
+                border-radius: 20px;
+                background-color:white;
+                padding:5px 8px;
+            }
+            /* Task 4 */
+
+        </style>
+        
+    </head>
+    
+    <body>
+        <div class="container">
+            <!-- Task 1 HTML-->
+            <div class="Task-title"><h1>Task 1</h1></div>
+            <div class="equation">
+                <div class="part-of-equation">
+                    <div class="number" id="first-number">
+
+                    </div>
+                    <div class="button" id="first-button">
+                        <button>Add first operand</button>
+                    </div>
+                </div>
+                <div class="part-of-equation">
+                    <div class="operation" id="operation-value">
+
+                    </div>
+                    <div class="button" id="operation-button">
+                        <button>Add operator</button>
+                    </div>
+                </div>
+                <div class="part-of-equation">
+                    <div class="number" id="second-number">
+
+                    </div>
+                    <div class="button" id="second-button">
+                        <button>Add second operand</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="calc" id="calc">Calculate result</button>
+            </div>
+
+
+            <!-- Task 2 HTML -->
+            <hr style="border:1px solid black; width:100%; margin-top:5vh;">
+            <div class="Task-title"><h1>Task 2</h1></div>
+            <div class="marks-container">
+                <div class="marks-value" id="marks-value">
+
+                </div>
+                <div class="marks-button" id="marks-button">
+                    <button>Add mark</button>
+                </div>
+            </div>
+
+            <!-- Task 3 HTML -->
+            <hr style="border:1px solid black; width:100%; margin-top:5vh;">
+            <div class="Task-title"><h1>Task 3</h1></div>
+            <div class="button" id="second-button">
+                <button id="pi">Calculate perimeter of a circle</button>
+            </div>
+            <!-- Task 4 html -->
+            <hr style="border:1px solid black; width:100%; margin-top:5vh;">
+            <div class="Task-title"><h1>Task 4</h1></div>
+            <div class="equation">
+                <div class="part-of-equation">
+                    <div class="number" id="first-number-compare">
+
+                    </div>
+                    <div class="button" id="first-button-compare">
+                        <button>Add first number</button>
+                    </div>
+                </div>
+                
+                <div class="part-of-equation">
+                    <div class="number" id="second-number-compare">
+
+                    </div>
+                    <div class="button" id="second-button-compare">
+                        <button>Add second second</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="calc" id="compare">Compare</button>
+            </div>
+            <div class="number" id="result-compare" style="width:100px;">
+            </div>
+        </div>
+        <script src="js.js"></script>
+    </body>
+    </html>
